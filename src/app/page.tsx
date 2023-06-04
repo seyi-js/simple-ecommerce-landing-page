@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import HeroSection from '../components/HeroSection';
 import RecentNewsSection from '../components/RecentNews';
 import BestSellerSection from '../components/BestSeller';
+import ProductSection from '../components/Products';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <RecentNewsSection />
       <BestSellerSection />
+      <ProductSection />
     </React.Fragment>
   );
 }
