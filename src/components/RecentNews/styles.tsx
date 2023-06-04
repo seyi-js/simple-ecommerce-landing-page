@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledRecentNewsSection = styled.section`
   margin: 100px 203px;
-  height: 622.14px;
+  /* height: 622.14px; */
 
   .recent-news-content {
     display: flex;
