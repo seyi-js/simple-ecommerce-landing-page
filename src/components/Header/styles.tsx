@@ -27,11 +27,16 @@ export const StyledLogo = styled.h1<{ styleProps?: any }>`
 
 export const StyledHeaderRight = styled.div<{ styleProps?: any }>`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 1;
   align-items: center;
 
   & > :hover {
     cursor: pointer;
+  }
+
+  div > div,
+  div > div > img {
+    margin: 0 20px;
   }
 `;
