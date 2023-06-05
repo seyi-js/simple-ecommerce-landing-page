@@ -7,12 +7,23 @@ export const StyledFooterSection = styled.footer`
   background-color: #008080;
   justify-content: space-around;
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
   .footer-left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    /* grid-template-rows: repeat(2, 1fr); */
     text-align: left;
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     a {
       font-weight: 500;
@@ -29,6 +40,10 @@ export const StyledFooterSection = styled.footer`
     justify-content: right;
     align-items: right;
     text-align: right;
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
 
     h2 {
       font-style: normal;

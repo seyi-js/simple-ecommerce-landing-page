@@ -4,10 +4,19 @@ export const StyledRecentNewsSection = styled.section`
   margin: 100px 203px;
   /* height: 622.14px; */
 
+  @media (max-width: 768px) {
+    margin: 50px 0px;
+  }
+
   .recent-news-content {
     display: flex;
     margin-top: 55px;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .recent-news-content-item-left {
       display: flex;
@@ -16,6 +25,10 @@ export const StyledRecentNewsSection = styled.section`
       text-align: center;
       flex: 1;
       padding: 0 20%;
+
+      @media (max-width: 768px) {
+        margin-bottom: 50px;
+      }
 
       h1 {
         font-style: normal;

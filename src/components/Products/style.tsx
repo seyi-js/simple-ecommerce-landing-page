@@ -4,17 +4,39 @@ export const StyledProductSection = styled.section`
   margin: 100px 203px;
   height: 622.14px;
 
+  @media (max-width: 768px) {
+    margin: 50px 50px;
+    height: auto;
+  }
+
   .products-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 32px;
     margin-top: 32px;
+
+    @media (max-width: 768px) {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
   }
 `;
 
 export const StyledProductItem = styled.div`
   display: flex;
   height: 100%;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
 
   div {
     background: #ffffff;

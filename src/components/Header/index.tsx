@@ -24,13 +24,20 @@ function Header({}: Props) {
             alignItems: 'center',
           }}
         >
-          <Image src='/img/search.svg' alt='logo' width={32} height={32} />
+          <Image
+            src='/img/search.svg'
+            alt='logo'
+            width={32}
+            height={32}
+            className='search'
+          />
 
           <div
             style={{
               display: 'flex',
               alignItems: 'baseline',
             }}
+            className='login'
           >
             <Image
               src='/img/user.svg'

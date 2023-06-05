@@ -5,6 +5,16 @@ export const StyledHeroSection = styled.section`
   margin: 30px 203px;
   justify-content: center;
   height: 505px;
+
+  @media (max-width: 768px) {
+    margin: 30px 50px;
+    flex-direction: column;
+    height: auto;
+
+    .hero-image {
+      display: none;
+    }
+  }
 `;
 
 export const StyledHeroSectionRight = styled.div`
@@ -12,6 +22,11 @@ export const StyledHeroSectionRight = styled.div`
   padding: 118px 91px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    padding: 50px 60px;
+    flex: 1;
+  }
 
   h1 {
     font-weight: 400;

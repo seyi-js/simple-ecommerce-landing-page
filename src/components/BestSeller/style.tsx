@@ -4,17 +4,35 @@ export const StyledBestSellerSection = styled.section`
   margin: 100px 203px;
   height: 622.14px;
 
+  @media (max-width: 768px) {
+    margin: 50px 50px;
+    height: auto;
+  }
+
   .best-seller-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
     margin-top: 32px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `;
 
 export const StyledBestSellerItem = styled.div`
   display: flex;
   height: 270px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    height: auto;
+
+    img {
+      display: none;
+    }
+  }
 
   div {
     background: #96dbdb;

@@ -7,7 +7,7 @@ type Props = {};
 const HeroSection = (props: Props) => {
   return (
     <StyledHeroSection>
-      <div>
+      <div className='hero-image'>
         <Image
           src='/img/HeroImage.svg'
           alt='Picture of the author'

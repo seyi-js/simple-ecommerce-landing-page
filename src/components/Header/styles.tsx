@@ -12,6 +12,11 @@ export const StyledHeader = styled.header<{ styleProps?: any }>`
 export const StyledHeaderLeft = styled.div<{ styleProps?: any }>`
   display: flex;
   flex: 2;
+
+  //media query
+  /* @media (max-width: 768px) {
+    flex: 1;
+  } */
 `;
 
 export const StyledLogo = styled.h1<{ styleProps?: any }>`
@@ -23,6 +28,10 @@ export const StyledLogo = styled.h1<{ styleProps?: any }>`
   color: #80753d;
   text-transform: uppercase;
   font-family: 'Taviraj', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const StyledHeaderRight = styled.div<{ styleProps?: any }>`
@@ -38,5 +47,13 @@ export const StyledHeaderRight = styled.div<{ styleProps?: any }>`
   div > div,
   div > div > img {
     margin: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    .login,
+    .search {
+      display: none !important;
+    }
   }
 `;
