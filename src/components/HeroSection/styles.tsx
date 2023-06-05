@@ -15,6 +15,14 @@ export const StyledHeroSection = styled.section`
       display: none;
     }
   }
+
+  @media (max-width: 500px) {
+    margin: 0;
+    .hero-image {
+      display: contents;
+      height: 100%;
+    }
+  }
 `;
 
 export const StyledHeroSectionRight = styled.div`
@@ -28,12 +36,21 @@ export const StyledHeroSectionRight = styled.div`
     flex: 1;
   }
 
+  @media (max-width: 500px) {
+    align-items: center;
+    text-align: center;
+  }
+
   h1 {
     font-weight: 400;
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.02em;
     color: #333333;
+
+    @media (max-width: 500px) {
+      font-size: 24px;
+    }
   }
 
   span {
@@ -41,6 +58,11 @@ export const StyledHeroSectionRight = styled.div`
     border: 1px solid #000000;
     align-self: baseline;
     margin-top: 76px;
+
+    @media (max-width: 500px) {
+      align-self: center;
+      width: 160px;
+    }
   }
 
   p {

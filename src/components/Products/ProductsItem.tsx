@@ -14,9 +14,11 @@ const ProductsItem = (props: Props) => {
   let formatPrice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   return (
     <StyledProductItem>
-      <Image src={image} alt={title} width={216} height={288} />
-
       <div>
+        <Image src={image} alt={title} width={216} height={288} />
+      </div>
+
+      <div className='box'>
         <h2>{title}</h2>
         <p>₦{formatPrice}</p>
 

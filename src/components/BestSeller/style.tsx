@@ -9,6 +9,10 @@ export const StyledBestSellerSection = styled.section`
     height: auto;
   }
 
+  @media (max-width: 500px) {
+    margin: 50px 5%;
+  }
+
   .best-seller-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

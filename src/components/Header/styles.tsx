@@ -7,6 +7,10 @@ export const StyledHeader = styled.header<{ styleProps?: any }>`
   height: 150px;
   padding: 35px 166px;
   align-items: center;
+
+  @media (max-width: 500px) {
+    padding: 0px 10%;
+  }
 `;
 
 export const StyledHeaderLeft = styled.div<{ styleProps?: any }>`
